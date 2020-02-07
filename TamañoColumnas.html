@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLUMNS</title>
+</head>
+<style>
+    .container {
+        height: 300vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template: repeat(2, 150px) / repeat(7 , 150px);
+    }
+    .item {
+        background: indianred;
+        display: grid;
+        border: 2px solid black;
+        padding: 0;
+        margin: 0;
+    }
+    .item:nth-of-type(1) {
+       grid-column: 1 / span 3;
+       grid-row: 1 /span 2;
+    }
+    .item:nth-of-type(2) {
+       grid-column: 4 / span 2;
+       grid-row: 1 / span 2;
+    }
+    .item:nth-of-type(3) {
+       grid-column: 6 / 8;
+    }
+</style>
+<body>
+    <section class="container">
+        <div class="item">item#1</div>
+        <div class="item">item#2</div>
+        <div class="item">item#3</div>
+        <div class="item">item#4</div>
+        <div class="item">item#5</div>
+    </section>
+</body>
+</html>
