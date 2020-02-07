@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas</title>
+</head>
+<style>
+    .body {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        display: grid;
+        grid-template: 100px 1fr 100px / 200px 1fr;
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 2px;
+        padding: 0;
+        grid-template-areas:    "header header"
+                                "menu content"
+                                "footer footer";
+    }
+    .item {
+        background: cornflowerblue;
+        padding: 1px;
+        border: 1px solid darkblue;
+    }
+    .item:nth-of-type(4) {
+        background: darkgreen;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 50px 50px 50px ;
+        grid-template-rows: 50px 50px 50px
+    }
+    .item .item {
+        background: darkorange;
+    }
+    .header {
+        grid-area: header;
+    }
+    .menu {
+        grid-area: menu;
+    }
+    .content {
+        grid-area: content;
+    }
+    .footer {
+        grid-area: footer;
+    }
+</style>
+<body>
+    <section class="container">
+        <div class="item header">Header</div>
+        <div class="item menu">Menu</div>
+        <div class="item content">Content</div>
+        <div class="item footer">Footer</div>
+    </section>
+</body>
+</html>
+
+
+
+
+
