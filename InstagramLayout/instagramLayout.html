@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Layout</title>
+</head>
+<style>
+    .body {
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+    }
+    .post-list {
+        display: grid;
+        grid-template-columns: repeat(3 , minmax(100px , 293px));
+        justify-content: center;
+        grid-gap: 25px;
+    }
+    .post {
+        cursor: pointer;
+        position: relative;
+    }
+    .post-img {
+        margin: 0;
+        padding: 0;
+    }
+    .post-img img {
+        width: 100%;
+        vertical-align: top;
+    }
+    .post-overlay {
+        background: rgba(0,0,0,0.4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .post:hover .post-overlay {
+        display: flex;
+    }
+    .post-likes,
+    .post-comments {
+        width: 80px;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+        display:inline-block;   
+    }
+    @media screen and (max-width: 768px) {
+        .post-list {
+            grid-gap: 3px;
+        }
+    }
+</style>
+<body>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/arandanos.png" alt="arandanos">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/carambola.png" alt="carambola">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/ciruelas.png" alt="ciruelas">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/coco.png" alt="coco">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/frutillas.jpg" alt="frutillas">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/llaollao.png" alt="llaollao">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/lychee.jpg" alt="lychee">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/mango.jpg" alt="mango">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/manzanas.png" alt="manzanas">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/maracuya.jpg" alt="maracuya">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/moras.jpg" alt="moras">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+        <a href="" class="post">
+            <figure class="post-img">
+                <img src="./imagenes/pitajaya.png" alt="pitajaya">
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </span>
+            </figure>
+        </a>
+    </section>
+</body>
+</html>
